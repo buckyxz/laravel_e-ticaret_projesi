@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\KategoriController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/',[AdminController::class,'index']);
 
+
+Route::get('/kategoriliste',[KategoriController::class,'katliste']);
+
+
+/*
 Route::get('/', function()
 {
    return View::make('pages.home');
@@ -22,3 +30,5 @@ Route::get('/contact', function()
 {
    return View::make('pages.contact');
 });
+
+*/
