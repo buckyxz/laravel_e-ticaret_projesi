@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\IlanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,7 @@ Route::get('/',[AdminController::class,'index']);
 
 Route::get('/kategoriliste',[KategoriController::class,'katliste']);
 
-
+Route::get('/ilanliste',[IlanController::class,'ilanliste']);
 /*
 Route::get('/', function()
 {

@@ -4,6 +4,14 @@
    
 admin kategori liste
 
+@foreach ($kategorilistesi as $kategori)
+
+    {{$kategori->katad}}
+
+@endforeach
+
+
+
 
 @stop
 
