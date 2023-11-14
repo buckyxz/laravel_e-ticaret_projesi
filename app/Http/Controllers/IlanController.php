@@ -38,4 +38,19 @@ class IlanController extends Controller
         return redirect('/ilaneklefrm');
 
     }
+
+    public function ilanarafrm()
+    {
+        $ilanlar=Ilan::all();
+        return view('admin.ilanaraliste',['ilanlar'=>$ilanlar]);
+    }
+
+    public function ilanara(Request $gelen)
+    {
+        $aranan= $gelen->baslik;
+        //$ilanlar=Ilan::Like('baslik', $aranan)->get();
+        $ilanlar = Ilan::where('baslik', 'like', "{$aranan}%")->get();
+        return view('admin.ilanaraliste',['ilanlar'=>$ilanlar]);
+    }
+
 }
