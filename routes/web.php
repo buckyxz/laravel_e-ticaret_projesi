@@ -21,7 +21,12 @@ Route::get('/',[AdminController::class,'index']);
 
 Route::get('/kategoriliste',[KategoriController::class,'katliste']);
 
+
+Route::resource('/ilan', IlanController::class);
 Route::get('/ilanliste',[IlanController::class,'ilanliste']);
+Route::get('/ilaneklefrm', [IlanController::class, 'ilanliste']);
+Route::post('/ilanekle', [IlanController::class, 'ilanekle']);
+
 /*
 Route::get('/', function()
 {

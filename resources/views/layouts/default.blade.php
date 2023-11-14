@@ -283,6 +283,12 @@
                   <p>Liste</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="/ilaneklefrm" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>İlan Ekle</p>
+                </a>
+              </li>
               
               
             </ul>

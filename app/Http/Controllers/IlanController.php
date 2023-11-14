@@ -18,4 +18,24 @@ class IlanController extends Controller
 
         return view('admin.ilanliste',['ilanlar'=>$ilanlar]);
     }
+
+    public function ilaneklefrm()
+    {
+        $ilanlar=Ilan::all();
+        return view('admin.ilanliste',['ilanlar'=>$ilanlar]);
+    }
+
+    public function ilanekle(Request $request)
+    {
+        $yeniilan = new Ilan;
+        $yeniilan->slug = 'slug';
+        $yeniilan->katid = 1;
+        $yeniilan->baslik = $request->input('baslik');
+        $yeniilan->aciklama = $request->input('aciklama');
+        $yeniilan->fiyat = $request->input('fiyat');
+        $yeniilan->save();
+
+        return redirect('/ilaneklefrm');
+
+    }
 }
