@@ -1,7 +1,7 @@
 ## Proje Resimleri
 
-![Proje Ekran Görüntüsü 1](master/blob/gorseller/1.png)
-![Proje Ekran Görüntüsü 2](master/gorseller/2.png)
+![Proje Ekran Görüntüsü 1](gorseller/1.png)
+![Proje Ekran Görüntüsü 2](2.png)
 ![Proje Ekran Görüntüsü 3](gorseller/3.png)
 ![Proje Ekran Görüntüsü 4](gorseller/4.png)
 ![Proje Ekran Görüntüsü 5](gorseller/5.png)
