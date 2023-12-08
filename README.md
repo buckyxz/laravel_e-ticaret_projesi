@@ -1,6 +1,6 @@
 ## Proje Resimleri
 
-![Proje Ekran Görüntüsü 1](gorseller/1.png)
+![Proje Ekran Görüntüsü 1](master/gorseller/1.png)
 ![Proje Ekran Görüntüsü 2](gorseller/2.png)
 ![Proje Ekran Görüntüsü 3](gorseller/3.png)
 ![Proje Ekran Görüntüsü 4](gorseller/4.png)
