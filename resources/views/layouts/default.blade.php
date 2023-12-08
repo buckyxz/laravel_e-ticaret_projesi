@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Fixed Sidebar</title>
+  <title>Abdulbaki Dobur</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   
   
-  
+  <link rel="stylesheet" href="{{ asset('dist/css/style.css') }}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
   <!-- overlayScrollbars -->
@@ -40,10 +40,10 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="../../index3.html" class="nav-link">Home</a>
+        <a href="../../index3.html" class="nav-link">Anasayfa</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
+        <a href="#" class="nav-link">İletişim</a>
       </li>
     </ul>
 
@@ -175,7 +175,7 @@
     <!-- Brand Logo -->
     <a href="../../index3.html" class="brand-link">
       <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">Laravel Theme</span>
     </a>
 
     <!-- Sidebar -->
@@ -186,7 +186,7 @@
           <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">Abdulbaki DOBUR</a>
         </div>
       </div>
 
@@ -253,16 +253,21 @@
               <li class="nav-item">
                 <a href="/kategoriliste" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Liste</p>
+                  <p>Kategori Liste</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/ara" class="nav-link">
+                <a href="/kategorieklefrm" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Ara</p>
+                  <p>Kategori Ekle</p>
                 </a>
               </li>
-              
+              <li class="nav-item">
+                <a href="/kategoriarafrm" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Kategori Ara</p>
+                </a>
+              </li>
               
               
               
@@ -763,13 +768,13 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Fixed Layout</h1>
+            <h1>Laravel e-Ticaret Projesi</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Layout</a></li>
-              <li class="breadcrumb-item active">Fixed Layout</li>
+              <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+              <li class="breadcrumb-item"><a href="#">Çıkış</a></li>
+              <li class="breadcrumb-item active">Laravel e-Ticaret Projesi</li>
             </ol>
           </div>
         </div>
@@ -789,11 +794,28 @@
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.2.0
+      <b>Version</b> 1.0 Beta
     </div>
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2023 <a href="https://github.com/bakidobur">Abdulbaki Dobur</a>.</strong> Tüm hakları saklıdır.
   </footer>
+  <style>
+  .main-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Beyaz transparan tonu */
+}
 
+.main-footer a {
+    color: inherit; /* Bağlantı rengini kalıtılan renk yapar */
+}
+
+.main-footer a:hover {
+    color: #007bff; /* Hover durumunda bağlantı rengini mavi yapar */
+}
+</style>
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->

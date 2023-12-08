@@ -1,5 +1,8 @@
 @extends('layouts.default')
-
+<head>
+    <title>İlan Arama</title>
+    <link rel="stylesheet" href="{{ asset('dist/css/style.css') }}">
+</head>
 @section('content')
 
 <h1>İlan</h1>
@@ -11,12 +14,16 @@
 <form method="POST" action="{{url('/ilanara')}}">
     @csrf
     <div class="form-group">
-        <label for="baslik">baslik</label>
-        <input type="text" name="baslik" id="baslik" class="form-control">
+        <label for="baslik">Başlık:</label>
+        <input type="text" name="baslik" id="baslik" class="form-control" required>
     </div>
     <div class="form-group">
-        <label for="id">id</label>
-        <textarea name="id" id="id" class="form-control" ></textarea>
+        <label for="aciklama">Açıklama:</label>
+        <textarea name="aciklama" id="aciklama" class="form-control" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="fiyat">Fiyat:</label>
+        <input type="number" step="0.01" name="fiyat" id="fiyat" class="form-control" required>
     </div>
    
     <button type="submit" class="btn btn-primary">ARA</button>
@@ -25,9 +32,10 @@
 <table class="table">
     <thead>
         <tr>
-            <th>baslik</th>
-            <th>fiyat</th>
-            <th>aciklama</th>
+            <th>Başlık</th>
+            <th>Açıklama</th>
+            <th>Fiyat</th>
+            <th>Resim</th>
         </tr>
     </thead>
     <tbody>
@@ -36,6 +44,13 @@
                 <td>{{ $ilan->baslik }}</td>
                 <td>{{ $ilan->aciklama }}</td>
                 <td>{{ $ilan->fiyat }} TL</td>
+                <td>
+                    @if ($ilan->resim1)
+                    <img src="{{ $ilan->resim1 }}" alt="Resim" width="80" height="80">
+                    @else
+                        Resim Yok
+                    @endif
+                </td>
 
             </tr>
         @endforeach

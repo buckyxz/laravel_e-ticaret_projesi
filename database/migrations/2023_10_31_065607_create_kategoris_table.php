@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('katad');
             $table->integer('ustid');
+            $table->string('slug');
             $table->timestamps();
         });
     }
